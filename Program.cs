@@ -12,6 +12,7 @@ void run()
     string? input = Console.ReadLine();
     if (!string.IsNullOrEmpty(input))
     {
+        input = input.ToLower().Replace(" ", "");
         string output = isPalindrome(input) ? "It is a palindrome" : "It is not palindrome";
         Console.WriteLine(output);
     }
